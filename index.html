@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main-menu.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +33,8 @@
 				autoplaySpeed: 4000,
 				fade: true,
 				cssEase: 'linear',
-				mobileFirst: true
+				mobileFirst: true,
+				arrows: true
 			});
 		});
 	</script>
@@ -40,7 +43,9 @@
 		<div class="header">
 			<div class="company-logo-and-name-and-slogan">
 				<div class="logo-image">
-					<img src="images/logo.png" alt="company-logo">
+					<a href="#">
+						<img src="images/logo.png" alt="company-logo">
+					</a>
 				</div>
 
 				<div class="company-name-and-slogan">
@@ -57,7 +62,34 @@
 			<div class="contact">
 				<p>+7(499)777-77-77</p>
 				<p>+7(499)777-77-77</p>
-				<a href="#">Наші контакти</a>
+				<div class="hidden-contact">
+					<input type="checkbox" id="click-check"/>
+					<label for="click-check" class="clickable">
+						<p>Наші контакти</p>
+					</label>
+					<section class="feedback">
+						<div class="close-btn">
+							<img src="images/icon_close.svg" alt="exit button">
+						</div>
+						<div class="feedback-body">
+							<h1></h1>
+						
+							Ваше ім'я*<br/>
+							<input type="" name="name" class="name"><br/>
+					
+							Телефон*<br/>
+							<input type="number" name="phone" class="phone"><br/>
+					
+							Email*<br/>
+							<input type="email" name="email" class="email"><br/>
+						
+							Повідомлення<br/>
+							<input type="text" name="message" class="message"><br/>
+						
+							<input type="button" value="Відправити">
+						</div>
+					</section>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -110,25 +142,142 @@
 		</div>
 	</section>
 
-	<section>
+	<section class="content">
 		<div class="breadcrumbs">
 			<nav>
 				/<a href="#">Головна</a>/
 			</nav>
 		</div>
+
+		<div class="content-block">
+			<div class="leftblock">
+				<div class="navigation">
+					<nav>
+						<ul>
+							<li><a href="#" class="section">Автомобілі</a></li>
+							<li>
+								<a href="#" class="section">Побутова техніка</a>
+								<div class="hidden-menu">
+									<nav>
+										<ul>
+											<li><a href="#">Мікрохвильовки</a></li>
+											<li><a href="#">Холодильники</a></li>
+											<li><a href="#">Посудомийні машини</a></li>
+											<li><a href="#">Чайники</a></li>
+										</ul>
+									</nav>
+								</div>
+							</li>
+							<li><a href="#" class="section">Мобільна техніка</a></li>
+							<li><a href="#" class="section">Комп'ютери</a></li>
+							<li><a href="#" class="section">Одяг</a></li>
+							<li><a href="#" class="section">Нерухомість</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="price-logo">
+					<img src="images/logo_price-list.jpg" alt="logo price list">
+					<p>Прайс-лист</p>
+				</div>
+			</div>
+
+			<div class="centerblock">
+				<div class="content-table">
+					<table>
+						<tr>
+							<td>
+								<img src="images/nophoto.jpg" alt="nop photo">
+								<a href="#"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+								<div>
+									<p class="price">1900 грн.</p>
+									<a href="#"><img src="images/icon_buy.svg" alt="buy" class="buy-img"></a>
+								</div>
+							</td>
+							<td>
+								<img src="images/nophoto.jpg" alt="nop photo">
+								<a href="#"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+								<div>
+									<p class="price">1900 грн.</p>
+									<a href="#"><img src="images/icon_buy.svg" alt="buy" class="buy-img"></a>
+								</div>
+							</td>
+							<td>
+								<img src="images/nophoto.jpg" alt="nop photo">
+								<a href="#"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+								<div>
+									<p class="price">1900 грн.</p>
+									<a href="#"><img src="images/icon_buy.svg" alt="buy" class="buy-img"></a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/nophoto.jpg" alt="nop photo">
+								<a href="#"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+								<div>
+									<p class="price">1900 грн.</p>
+									<a href="#"><img src="images/icon_buy.svg" alt="buy" class="buy-img"></a>
+								</div>
+							</td>
+							<td>
+								<img src="images/nophoto.jpg" alt="nop photo">
+								<a href="#"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+								<div>
+									<p class="price">1900 грн.</p>
+									<a href="#"><img src="images/icon_buy.svg" alt="buy" class="buy-img"></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="page-num">
+					<a href="#" class="picked">1</a> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a href="">5</a> <a href="">6</a> <a href="">7</a> <a href="">8</a> <a href="">9</a> <a href="">10</a>
+				</div>
+
+				<hr/>
+
+				<div class="desc-content">
+					<div class="left-desc">
+						<p>
+							Компанія «Піксель Плюс» існує понад 6 років, за цей час ми брали участь у розробці більш як 700 сайтів, тому можемо впевнено називати себе професіоналами. На даний момент наш колектив складається з більш ніж 30 співробітників, що працюють у двох офісах у Москві та Зеленограді. характерні цього жанру мотиви: нерозділеного кохання, догляду молодості, згасання душі.
+						</p>
+					</div>
+
+					<div class="right-desc">
+						<p>
+							Одним із основних напрямків робіт нашої компанії є пошукове просування сайтів, на даний момент ми працюємо з більш ніж 150 постійними клієнтами за більш ніж 11 000 пошуковими запитами. При цьому в роботі основний акцент ми робимо на якості робіт, а також застосовуємо власні унікальні розробки в галузі SEO просування. На даний момент відділ SEO складається з 9 осіб під керівництвом провідного спеціаліста, які переважно працюють у нашому московському офісі.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<footer>
-		<div class="about">
-			
-		</div>
+		<div class="footer">
+			<div class="about">
+				<p>© 2012-2013 ЗАО "Компанія"</p>
+				<p>info@name.ua</p>
+			</div>
 
-		<div class="tags">
-			
-		</div>
+			<div class="tags">
+				<nav>
+					<ul>
+						<li><a href="#">Головна</a></li>
+						<li><a href="html/catalog.html">Каталог</a></li>
+						<li><a href="html/delivery-and-payment.html">Доставка і оплата</a></li>
+						<li><a href="html/price-list.html">Прайс-лист</a></li>
+						<li><a href="html/contacts.html">Контакти</a></li>
+					</ul>
+				</nav>
+			</div>
 
-		<div class="creators">
-			
+			<div class="creators">
+				<img src="images/logo_companydev.svg" alt="company dev logo">
+				<p><u><b>Розробка сайту</b></u> - <br/> компанія "Піксель Плюс"</p>
+			</div>
 		</div>
 	</footer>
 </body>

@@ -1,0 +1,33 @@
+.feedback-body {
+    text-align: center;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    visibility: hidden;
+    top: 40%;
+    left: 37%;
+    width: 480px;
+    border: solid 1px black;
+}
+
+.close-btn {
+    visibility: hidden;
+}
+
+.click-container {
+    position: relative;
+    display: inline-block;
+}
+
+.clickable {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#click-check {
+    display: none;
+}
+
+#click-check:checked ~ .feedback, .close-btn {
+    visibility: visible;
+}

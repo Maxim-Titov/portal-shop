@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.slider img {
+    width: 100%;
+}
+
 .slider .slick-slide {
     text-align: center;
     z-index: -10;

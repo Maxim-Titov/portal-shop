@@ -1,0 +1,229 @@
+.content {
+    width: 980px;
+    margin: 10px auto;
+}
+
+.content-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.content-block .leftblock {
+    width: 25%;
+}
+
+.content-block .centerblock {
+    width: 75%;
+}
+
+.content-block .leftblock .navigation .section {
+    text-decoration: none;
+    font-size: medium;
+}
+
+.content-block .leftblock .navigation nav ul li {
+    list-style: none;
+}
+
+.content-block .leftblock .navigation .hidden-menu {
+    list-style: circle;
+    display: none;
+}
+
+.content-block .leftblock .navigation li:hover .hidden-menu {
+    display: block;
+}
+
+.content-block .leftblock .navigation .hidden-menu a {
+    text-decoration: none;
+    font-size: small;
+}
+
+.content-block .leftblock .price-logo {
+    text-align: center;
+    margin-top: 75%;
+}
+
+.content-block .leftblock .price-logo p {
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 0;
+}
+
+.content-block .centerblock table {
+    border-spacing: 25px;
+}
+
+.content-block .centerblock table a {
+    text-decoration: none;
+    height: 15px;
+    margin-top: 10%;
+}
+
+.content-block .centerblock table tr td{
+    background-color: #6e6e6e;
+    text-align: center;
+    width: 30%;
+}
+
+.content-block .centerblock table tr td img {
+    width: 75%;
+    margin: 8%;
+}
+
+.content-block .centerblock table tr td .description{
+    font-size: 18px;
+    padding: 5px;
+    text-align: left;
+}
+
+.content-block .centerblock table tr td div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-block .centerblock table tr td div .price {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+
+.content-block .centerblock table tr td div .buy-img {
+    width: 25px;
+}
+
+.content-block .centerblock .page-num {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.content-block .centerblock .page-num a {
+    text-decoration: none;
+    font-size: small;
+    margin: 0px 1.5% 0px 1.5%;
+}
+
+.content-block .centerblock .page-num .picked{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.content-block .centerblock .desc-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-block .centerblock .desc-content .left-desc {
+    width: 50%;
+    padding: 15px;
+}
+
+.content-block .centerblock .desc-content .right-desc {
+    width: 50%;
+    padding: 15px;
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+    .content {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .content-block .centerblock table {
+        border-spacing: 15px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 768px) {
+    .content-block .centerblock table {
+        border-spacing: 10px;
+    }
+
+    .content-block .leftblock {
+        width: 30%;
+    }
+    
+    .content-block .centerblock {
+        width: 70%;
+    }
+
+    .content-block .centerblock table tr td .description{
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .content-block .centerblock table tr td div .price {
+        font-weight: bold;
+        font-size: 15px;
+        color: black;
+    }
+
+    .content-block .centerblock table tr td div .buy-img {
+        width: 20px;
+    }
+
+    .content-block .leftblock .price-logo img {
+        width: 50px;
+    }
+
+    .content-block .leftblock .price-logo p {
+        font-weight: bold;
+        font-size: large;
+        margin-top: 0;
+    }
+
+    .content-block .leftblock .price-logo {
+        margin-top: 30%;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 500px) {
+    .content-block .leftblock {
+        width: 35%;
+    }
+    
+    .content-block .centerblock {
+        width: 65%;
+    }
+
+    .content-block .centerblock table {
+        border-spacing: 5px;
+    }
+
+    .content-block .centerblock table tr td .description{
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .content-block .centerblock table tr td div .price {
+        font-weight: bold;
+        font-size: 15px;
+        color: black;
+    }
+
+    .content-block .centerblock table tr td div .buy-img {
+        width: 20px;
+    }
+
+    .content-block .leftblock .price-logo img {
+        width: 50px;
+    }
+
+    .content-block .leftblock .price-logo p {
+        font-weight: bold;
+        font-size: large;
+        margin-top: 0;
+    }
+
+    .content-block .leftblock .price-logo {
+        margin-top: 30%;
+    }
+}
