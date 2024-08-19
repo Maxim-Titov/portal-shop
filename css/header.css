@@ -1,0 +1,168 @@
+header {
+  width: 100%;
+  padding: 3% 10px 3% 10px;
+  background-color: #6d6d6d;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+}
+
+.header .company-name {
+    text-align: left;
+    font-size: 35px;
+    line-height: 100%;
+    display: block;
+    margin-left: 25px;
+    width: 10%;
+    color: #434343;
+    font-weight: bold;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+}
+
+.company-slogan {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 15%;
+}
+
+.contact {
+    text-align: right;
+    display: block;
+    font-size: 30px;
+}
+
+.contact a {
+    color: #434343;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.company-logo-and-name-and-slogan {
+    display: flex;
+    justify-content: left;
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+   .header {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+
+   .header .company-name {
+      text-align: left;
+      font-size: 20px;
+      line-height: 100%;
+      display: block;
+      margin-left: 5px;
+      width: 5%;
+      color: #434343;
+      font-weight: bold;
+   }
+
+   .company-slogan {
+      font-size: 15px;
+      margin-left: 5px;
+      margin-top: 5%;
+   }
+
+   .contact {
+      text-align: right;
+      display: block;
+      font-size: 15px;
+   }
+
+   .header img {
+      width: 75px;
+      height: 75px;
+   }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 768px) {
+   .header {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+
+   .header .company-name {
+      text-align: left;
+      font-size: 20px;
+      line-height: 100%;
+      display: block;
+      margin-left: 5px;
+      width: 5%;
+      color: #434343;
+      font-weight: bold;
+   }
+
+   .company-slogan {
+      font-size: 15px;
+      margin-left: 5px;
+      margin-top: 5%;
+   }
+
+   .contact {
+      text-align: right;
+      display: block;
+      font-size: 15px;
+   }
+
+   .header img {
+      width: 75px;
+      height: 75px;
+   }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 500px) {
+   .header {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+
+   .header .company-name {
+      text-align: left;
+      font-size: 20px;
+      line-height: 100%;
+      display: block;
+      margin-left: 5px;
+      width: 5%;
+      color: #434343;
+      font-weight: bold;
+   }
+
+   .company-slogan {
+      font-size: 15px;
+      margin-left: 5px;
+      margin-top: 5%;
+   }
+
+   .contact {
+      text-align: right;
+      display: block;
+      font-size: 15px;
+   }
+
+   .header img {
+      width: 50px;
+      height: 50px;
+   }
+}
