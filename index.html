@@ -34,7 +34,9 @@
 				fade: true,
 				cssEase: 'linear',
 				mobileFirst: true,
-				arrows: true
+				arrows: true,
+				prevArrow: $('.left-arrow'),
+				nextArrow: $('.right-arrow')
 			});
 		});
 	</script>
@@ -65,29 +67,30 @@
 				<div class="hidden-contact">
 					<input type="checkbox" id="click-check"/>
 					<label for="click-check" class="clickable">
-						<p>Наші контакти</p>
+						<p>Зворотній зв'язок</p>
 					</label>
+					
 					<section class="feedback">
-						<div class="close-btn">
-							<img src="images/icon_close.svg" alt="exit button">
-						</div>
-						<div class="feedback-body">
-							<h1></h1>
+						<input type="checkbox" id="click-check"/>
+						<label for="click-check" class="clickable">
+							<img src="images/icon_close.svg" alt="exit button" class="close-btn">
+						</label>
 						
-							Ваше ім'я*<br/>
-							<input type="" name="name" class="name"><br/>
+						<h1>Зворотній зв'язок</h1>
+						
+						Ваше ім'я*<br/>
+						<input type="text" name="name" class="name"><br/>
 					
-							Телефон*<br/>
-							<input type="number" name="phone" class="phone"><br/>
+						Телефон*<br/>
+						<input type="number" name="phone" class="phone"><br/>
 					
-							Email*<br/>
-							<input type="email" name="email" class="email"><br/>
+						Email*<br/>
+						<input type="email" name="email" class="email" required><br/>
 						
-							Повідомлення<br/>
-							<input type="text" name="message" class="message"><br/>
+						Повідомлення<br/>
+						<textarea name="message" class="message"></textarea><br/>
 						
-							<input type="button" value="Відправити">
-						</div>
+						<input type="button" value="ВІДПРАВИТИ" class="enter-btn">
 					</section>
 				</div>
 			</div>
@@ -123,7 +126,7 @@
 	</section>
 
 	<section>
-		<div>
+		<div class="slider-and-arrows">
 			<div class="slider">
 				<div class="slick-slide">
 					<img alt="slide1" src="images/slide1.jpg">
@@ -133,12 +136,12 @@
 				</div>
 			</div>
 
-			<div class="slick-prev">
-                <img src="images/left.jpg">
-            </div>
-            <div class="slick-next">
-                <img src="images/right.jpg">
-            </div>
+			<div class="arrows">
+				<ul>
+					<li class="left-arrow"></li>
+					<li class="right-arrow"></li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
