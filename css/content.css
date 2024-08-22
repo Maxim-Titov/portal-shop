@@ -19,16 +19,28 @@
 
 .content-block .leftblock .navigation .section {
     text-decoration: none;
-    font-size: medium;
+    font-size: 20px;
 }
 
-.content-block .leftblock .navigation nav ul li {
+.content-block .leftblock .navigation ul li{
+    margin: 15px 0;
+}
+
+.content-block .leftblock .navigation .selected a {
+    text-decoration: underline;
+}
+
+.content-block .leftblock .navigation nav ul li{
     list-style: none;
 }
 
 .content-block .leftblock .navigation .hidden-menu {
-    list-style: circle;
     display: none;
+}
+
+.content-block .leftblock .navigation .hidden-menu ul li {
+    list-style: circle;
+    margin: 0;
 }
 
 .content-block .leftblock .navigation li:hover .hidden-menu {
@@ -43,6 +55,7 @@
 .content-block .leftblock .price-logo {
     text-align: center;
     margin-top: 75%;
+    color: #4a4a4a;
 }
 
 .content-block .leftblock .price-logo p {
@@ -62,7 +75,6 @@
 }
 
 .content-block .centerblock table tr td{
-    background-color: #6e6e6e;
     text-align: center;
     width: 30%;
 }
@@ -86,7 +98,7 @@
 .content-block .centerblock table tr td div .price {
     font-weight: bold;
     font-size: 25px;
-    color: black;
+    color: #575757;
 }
 
 .content-block .centerblock table tr td div .buy-img {
@@ -95,7 +107,7 @@
 
 .content-block .centerblock .page-num {
     text-align: center;
-    margin-bottom: 45px;
+    margin: 0 0px 55px 0px;
 }
 
 .content-block .centerblock .page-num a {

@@ -1,5 +1,5 @@
 .menu {
-    background-color: #3b3b3b;
+    background-color: #777777;
     width: 100%;
 }
 
@@ -21,13 +21,13 @@
     color: white;
 }
 
-.menu li:hover {
-    text-decoration: underline;
-}
-
 .menu a {
     color: white;
     text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
 }
 
 .menu ul {

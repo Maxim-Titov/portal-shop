@@ -6,12 +6,23 @@
     top: 10%;
     left: 36%;
     width: 480px;
-    border: solid 1px black;
     opacity: 0;
     overflow: hidden;
     visibility: hidden;
     transition: opacity 0.5s ease;
     z-index: 11;
+}
+
+.back-black {
+    position: fixed;
+    z-index: 9;
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
 }
 
 .close-btn {
@@ -48,10 +59,8 @@
     overflow: visible;
 }
 
-#close-check:checked ~ .feedback {
-    visibility: hidden;
-    opacity: 0;
-    overflow: hidden;
+#click-check:checked ~ .back-black {
+    visibility: visible;
 }
 
 .enter-btn {

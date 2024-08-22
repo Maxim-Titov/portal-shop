@@ -1,7 +1,7 @@
 header {
    width: 100%;
    padding: 3% 10px 3% 10px;
-   background-color: #6d6d6d;
+   background-color: white;
 }
 
 .header {
@@ -18,7 +18,7 @@ header {
     display: block;
     margin-left: 25px;
     width: 10%;
-    color: #434343;
+    color: #777777;
     font-weight: bold;
 }
 
@@ -31,16 +31,18 @@ header {
     font-size: 20px;
     margin-left: 25px;
     margin-top: 15%;
+    color: #777777;
 }
 
 .contact {
     text-align: right;
     display: block;
     font-size: 30px;
+    color: #777777;
 }
 
 .contact a {
-    color: #434343;
+    color: #777777;
     text-decoration: underline;
     font-weight: bold;
 }
