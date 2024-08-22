@@ -141,16 +141,23 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 768px) {
+    .content-block {
+        display: block;
+        justify-content: none;
+    }
+
     .content-block .centerblock table {
         border-spacing: 10px;
     }
 
     .content-block .leftblock {
-        width: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
     
     .content-block .centerblock {
-        width: 70%;
+        width: 100%;
     }
 
     .content-block .centerblock table tr td .description{
@@ -179,21 +186,13 @@
     }
 
     .content-block .leftblock .price-logo {
-        margin-top: 30%;
+        margin-top: 0;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 500px) {
-    .content-block .leftblock {
-        width: 35%;
-    }
-    
-    .content-block .centerblock {
-        width: 65%;
-    }
-
     .content-block .centerblock table {
         border-spacing: 5px;
     }
@@ -224,6 +223,6 @@
     }
 
     .content-block .leftblock .price-logo {
-        margin-top: 30%;
+        margin-top: 0;
     }
 }
