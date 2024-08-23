@@ -43,6 +43,10 @@
     margin: 0;
 }
 
+.content-block .leftblock .navigation .hidden-menu ul li .selected {
+    color: black;
+}
+
 .content-block .leftblock .navigation li:hover .hidden-menu {
     display: block;
 }
@@ -58,10 +62,63 @@
     color: #4a4a4a;
 }
 
+.content-block .leftblock .price-logo a {
+    text-decoration: none;
+}
+
 .content-block .leftblock .price-logo p {
     font-weight: bold;
     font-size: x-large;
     margin-top: 0;
+}
+
+.centerblock .div-table {
+    display: none;
+}
+
+.centerblock .div-table a {
+    text-decoration: none;
+    height: 15px;
+    margin-top: 10%;
+}
+
+.centerblock .div-table .table-row  {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+
+.centerblock .div-table .table-row .table-point {
+    text-align: center;
+    width: 30%;
+    background-color: #dddddd;
+    margin: 0 15px;
+}
+
+.centerblock .div-table .table-row .table-point img {
+    width: 75%;
+    margin: 8%;
+}
+
+.centerblock .div-table .table-row .table-point .description {
+    font-size: 18px;
+    padding: 5px;
+    text-align: left;
+}
+
+.centerblock .div-table .table-row .table-point div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.centerblock .div-table .table-row .table-point div .price {
+    font-weight: bold;
+    font-size: 25px;
+    color: #575757;
+}
+
+.centerblock .div-table .table-row .table-point div .buy-img {
+    width: 25px;
 }
 
 .content-block .centerblock table {
@@ -138,6 +195,18 @@
     padding: 15px;
 }
 
+.contacts-block {
+    text-align: center;
+}
+
+.contacts-block .numbers {
+    margin: 75px 0;
+}
+
+.contacts-block .numbers p {
+    font-size: x-large;
+}
+
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
@@ -160,7 +229,22 @@
     }
 
     .content-block .centerblock table {
-        border-spacing: 10px;
+        display: none;
+    }
+
+    .centerblock .div-table {
+        display: block;
+    }
+
+    .centerblock .div-table .table-row {
+        display: block;
+        justify-content: none;
+    }
+
+    .centerblock .div-table .table-row .table-point {
+        margin: 0 auto;
+        width: 50%;
+        margin-bottom: 25px;
     }
 
     .content-block .leftblock {
@@ -173,18 +257,18 @@
         width: 100%;
     }
 
-    .content-block .centerblock table tr td .description{
+    .content-block .centerblock .div-table .table-row .table-point .description{
         font-size: 15px;
         text-align: left;
     }
 
-    .content-block .centerblock table tr td div .price {
+    .content-block .centerblock .div-table .table-row .table-point div .price {
         font-weight: bold;
         font-size: 15px;
         color: black;
     }
 
-    .content-block .centerblock table tr td div .buy-img {
+    .content-block .centerblock .div-table .table-row .table-point .buy-img {
         width: 20px;
     }
 
@@ -201,41 +285,24 @@
     .content-block .leftblock .price-logo {
         margin-top: 0;
     }
-}
 
-/*------------------------------------------------------------------*/
-
-@media(max-width: 500px) {
-    .content-block .centerblock table {
-        border-spacing: 5px;
+    .content-block .centerblock .desc-content {
+        display: block;
+        justify-content: none;
+        text-align: justify;
     }
 
-    .content-block .centerblock table tr td .description{
-        font-size: 13px;
-        text-align: left;
+    .content-block .centerblock .desc-content .left-desc {
+        width: 100%;
+        padding: 5px 15px;
+    }
+    
+    .content-block .centerblock .desc-content .right-desc {
+        width: 100%;
+        padding: 5px 15px;
     }
 
-    .content-block .centerblock table tr td div .price {
-        font-weight: bold;
+    .content-block .leftblock .navigation .section {
         font-size: 15px;
-        color: black;
-    }
-
-    .content-block .centerblock table tr td div .buy-img {
-        width: 20px;
-    }
-
-    .content-block .leftblock .price-logo img {
-        width: 50px;
-    }
-
-    .content-block .leftblock .price-logo p {
-        font-weight: bold;
-        font-size: large;
-        margin-top: 0;
-    }
-
-    .content-block .leftblock .price-logo {
-        margin-top: 0;
     }
 }

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Shop</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/elements.css">
+		<link rel="stylesheet" type="text/css" href="../css/header.css">
+		<link rel="stylesheet" type="text/css" href="../css/main-menu.css">
+		<link rel="stylesheet" type="text/css" href="../css/footer.css">
+		<link rel="stylesheet" type="text/css" href="../css/slider.css">
+		<link rel="stylesheet" type="text/css" href="../css/content.css">
+		<link rel="stylesheet" type="text/css" href="../css/feedback.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="company-logo-and-name-and-slogan">
+					<div class="logo-image">
+						<a href="#">
+							<img src="../images/logo.png" alt="company-logo">
+						</a>
+					</div>
+
+					<div class="company-name-and-slogan">
+						<div class="company-name">
+							Назва компанії
+						</div>
+
+						<div class="company-slogan">
+							Сама крута компанія
+						</div>
+					</div>
+				</div>
+
+				<div class="contact">
+					<p>+7(499)777-77-77</p>
+					<p>+7(499)777-77-77</p>
+					<div class="hidden-contact">
+						<input type="checkbox" id="click-check"/>
+						<label for="click-check" class="clickable">
+							<p>Зворотній зв'язок</p>
+						</label>
+						
+						<section class="feedback">
+							<input type="checkbox" id="click-check"/>
+							<label for="click-check" class="clickable">
+								<img src="../images/icon_close.svg" alt="exit button" class="close-btn">
+							</label>
+							
+							<h1>Зворотній зв'язок</h1>
+							
+							<form method="get">
+								Ваше ім'я*<br/>
+								<input type="text" name="name" class="name" required><br/>
+							
+								Телефон*<br/>
+								<input type="number" name="phone" class="phone" required><br/>
+							
+								Email*<br/>
+								<input type="email" name="email" class="email" required><br/>
+								
+								Повідомлення<br/>
+								<textarea name="message" class="message"></textarea><br/>
+								
+								<button class="enter-btn">ВІДПРАВИТИ</button>
+							</form>
+						</section>
+
+						<div class="back-black"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section>
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				<span></span>
+				</label>
+				<ul class="menu__box">
+					<li><a class="menu__item" href="../index.html">Головна</a></li>
+					<li><a class="menu__item" href="catalog.html">Каталог</a></li>
+					<li><a class="menu__item" href="delivery-and-payment.html">Доставка і оплата</a></li>
+					<li><a class="menu__item" href="price-list.html">Прайс-лист</a></li>
+					<li><a class="menu__item" href="contacts.html">Контакти</a></li>
+				</ul>
+			</div>
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><a href="../index.html">Головна</a> |</li>
+						<li><a href="catalog.html">Каталог</a> |</li>
+						<li><a href="delivery-and-payment.html">Доставка і оплата</a> |</li>
+						<li><a href="price-list.html">Прайс-лист</a> |</li>
+						<li><a href="contacts.html">Контакти</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+
+		<section>
+			<div class="slider-and-arrows">
+				<div class="slider">
+					<div class="slick-slide">
+						<img alt="slide1" src="../images/slide1.jpg">
+					</div>
+					<div class="slick-slide"> 
+						<img alt="slide2" src="../images/slide2.jpg">
+					</div>
+				</div>
+
+				<div class="arrows">
+					<ul>
+						<li class="left-arrow"></li>
+						<li class="right-arrow"></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="content">
+			<div class="breadcrumbs">
+				<nav>
+					<a href="../index.html">Головна</a> / Прайс-лист
+				</nav>
+			</div>
+
+			<div class="content-block">
+				<div class="leftblock">
+					<div class="navigation">
+						<nav>
+							<ul>
+								<li>
+									<a href="#" class="section">Автомобілі</a>
+
+									<div class="hidden-menu">
+										<nav>
+											<ul>
+												<li><a href="#">BMW</a></li>
+												<li><a href="#">Audi</a></li>
+												<li><a href="#">Toyota</a></li>
+											</ul>
+										</nav>
+									</div>
+								</li>
+								<li>
+									<a href="categories/appliances.html" class="section">Побутова техніка</a>
+
+									<div class="hidden-menu">
+										<nav>
+											<ul>
+												<li><a href="categories/filter-pages/microwaves.html">Мікрохвильовки</a></li>
+												<li><a href="categories/filter-pages/freezers.html">Холодильники</a></li>
+												<li><a href="categories/filter-pages/dishwashers.html">Посудомийні машини</a></li>
+												<li><a href="categories/filter-pages/teapots.html">Чайники</a></li>
+											</ul>
+										</nav>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="section">Мобільна техніка</a>
+
+									<div class="hidden-menu">
+										<nav>
+											<ul>
+												<li><a href="#">Xiaomi</a></li>
+												<li><a href="#">Samsung</a></li>
+												<li><a href="#">Iphone</a></li>
+												<li><a href="#">ZTE</a></li>
+												<li><a href="#">Huawei</a></li>
+											</ul>
+										</nav>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="section">Комп'ютери</a>
+
+									<div class="hidden-menu">
+										<nav>
+											<ul>
+												<li><a href="#">Стільникові ПК</a></li>
+												<li><a href="#">Ноутбуки</a></li>
+											</ul>
+										</nav>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="section">Одяг</a>
+
+									<div class="hidden-menu">
+										<nav>
+											<ul>
+												<li><a href="#">Куртки</a></li>
+												<li><a href="#">Сорочки</a></li>
+												<li><a href="#">Штани</a></li>
+											</ul>
+										</nav>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="section">Нерухомість</a>
+
+									<div class="hidden-menu">
+										<nav>
+											<ul>
+												<li><a href="#">Квартири</a></li>
+												<li><a href="#">Приватні будинки</a></li>
+											</ul>
+										</nav>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="centerblock">
+					<div class="content-table">
+						<table>
+							<tr>
+								<td>
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<div>
+										<p class="price">1900 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</td>
+								<td>
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Сама кльова BMW, яку потрібно купити</p></a>
+									<div>
+										<p class="price">3 600000 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</td>
+								<td>
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Сама кльова куртка, яку потрібно купити</p></a>
+									<div>
+										<p class="price">2000 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Сама кльова квартира, яку потрібно купити</p></a>
+									<div>
+										<p class="price">1 500000 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</td>
+								<td>
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Самий кльовий ноутбук, який потрібно купити</p></a>
+									<div>
+										<p class="price">12000 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</td>
+							</tr>
+						</table>
+
+						<div class="div-table">
+							<div class="table-row">
+								<div class="table-point">
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<div>
+										<p class="price">1900 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</div>
+	
+								<div class="table-point">
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Сама кльова BMW, яку потрібно купити</p></a>
+									<div>
+										<p class="price">1900 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</div>
+	
+								<div class="table-point">
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Сама кльова куртка, яку потрібно купити</p></a>
+									<div>
+										<p class="price">1900 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</div>
+							</div>
+	
+							<div class="table-row">
+								<div class="table-point">
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Сама кльова квартира, яку потрібно купити</p></a>
+									<div>
+										<p class="price">1900 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</div>
+	
+								<div class="table-point">
+									<img src="../images/nophoto.jpg" alt="nop photo">
+									<a href="delivery-and-payment.html"><p class="description">Самий кльовий ноутбук, який потрібно купити</p></a>
+									<div>
+										<p class="price">1900 грн.</p>
+										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr/>
+
+					<div class="desc-content">
+						<div class="left-desc">
+							<p>
+								Компанія «Піксель Плюс» існує понад 6 років, за цей час ми брали участь у розробці більш як 700 сайтів, тому можемо впевнено називати себе професіоналами. На даний момент наш колектив складається з більш ніж 30 співробітників, що працюють у двох офісах у Москві та Зеленограді. характерні цього жанру мотиви: нерозділеного кохання, догляду молодості, згасання душі.
+							</p>
+						</div>
+
+						<div class="right-desc">
+							<p>
+								Одним із основних напрямків робіт нашої компанії є пошукове просування сайтів, на даний момент ми працюємо з більш ніж 150 постійними клієнтами за більш ніж 11 000 пошуковими запитами. При цьому в роботі основний акцент ми робимо на якості робіт, а також застосовуємо власні унікальні розробки в галузі SEO просування. На даний момент відділ SEO складається з 9 осіб під керівництвом провідного спеціаліста, які переважно працюють у нашому московському офісі.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer">
+				<div class="about">
+					<p>© 2012-2013 ЗАО "Компанія"</p>
+					<p>info@name.ua</p>
+				</div>
+
+				<div class="tags">
+					<nav>
+						<ul>
+							<li><a href="../index.html">Головна</a></li>
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="delivery-and-payment.html">Доставка і оплата</a></li>
+							<li><a href="price-list.html">Прайс-лист</a></li>
+							<li><a href="contacts.html">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="creators">
+					<img src="../images/logo_companydev.svg" alt="company dev logo">
+					<p><u><b>Розробка сайту</b></u> - <br/> компанія "Піксель Плюс"</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<script type="text/javascript" src="../js/script.js"></script>
+	</body>
+</html>

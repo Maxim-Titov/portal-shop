@@ -1,0 +1,46 @@
+.delivery-and-payment-form {
+    text-align: center;
+}
+
+.delivery-and-payment-form input {
+    width: 450px;
+    height: 3lh;
+    margin: 5px 0;
+}
+
+.delivery-and-payment-form .cvv-and-pin {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.delivery-and-payment-form .cvv-and-pin input {
+    width: 220px;
+}
+
+.delivery-and-payment-form button {
+    width: 450px;
+    height: 3lh;
+    margin-top: 10px;
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+    .delivery-and-payment-form input {
+        width: 100%;
+    }
+
+    .delivery-and-payment-form .cvv-and-pin {
+        width: 100%;
+    }
+
+    .delivery-and-payment-form .cvv-and-pin input {
+        width: 100%;
+    }
+
+    .delivery-and-payment-form button {
+        width: 100%;
+    }
+}
