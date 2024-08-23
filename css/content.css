@@ -222,7 +222,7 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 768px) {
+@media(max-width: 768px) {   
     .content-block {
         display: block;
         justify-content: none;
@@ -304,5 +304,9 @@
 
     .content-block .leftblock .navigation .section {
         font-size: 15px;
+    }
+
+    .content-block .leftblock .navigation nav ul li {
+        margin: 0;
     }
 }
