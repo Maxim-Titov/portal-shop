@@ -258,19 +258,30 @@
         width: 100%;
     }
 
+    .content-block .centerblock .div-table .table-row .table-point img {
+        width: 275px;
+    }
+
     .content-block .centerblock .div-table .table-row .table-point .description{
-        font-size: 15px;
+        font-size: 20px;
         text-align: left;
+        margin: 0;
     }
 
     .content-block .centerblock .div-table .table-row .table-point div .price {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 20px;
         color: black;
     }
 
     .content-block .centerblock .div-table .table-row .table-point .buy-img {
-        width: 20px;
+        width: 25px;
+    }
+
+    .content-block .centerblock .div-table .table-row .table-point div {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 25px 0 25px;
     }
 
     .content-block .leftblock .price-logo img {
