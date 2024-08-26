@@ -259,7 +259,7 @@
     }
 
     .content-block .centerblock .div-table .table-row .table-point img {
-        width: 275px;
+        width: 200px;
     }
 
     .content-block .centerblock .div-table .table-row .table-point .description{
@@ -320,5 +320,13 @@
 
     .content-block .leftblock .navigation nav ul li {
         margin: 0;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 500px) {
+    .content-block .centerblock .div-table .table-row .table-point img {
+        width: 135px;
     }
 }
