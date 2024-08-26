@@ -50,6 +50,23 @@
     cursor: pointer;
 }
 
+.feedback input {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 5%;
+    margin-top: 10px;
+}
+
+.feedback input:invalid {
+    outline-color: red;
+    box-shadow: inset 0 0 10px 3px red;
+}
+
+.feedback input:invalid::placeholder {
+    color: red;
+    padding-left: 15px;
+}
+
 #click-check, #close-check {
     display: none;
 }
@@ -77,17 +94,10 @@
     font-size: 18px;
 }
 
-.message {
+.feedback .message {
     field-sizing: content;
     width: 350px;
     height: 10lh;
-    margin-top: 10px;
-}
-
-.feedback .name, .phone, .email {
-    width: 350px;
-    height: 40px;
-    margin-bottom: 5%;
     margin-top: 10px;
 }
 

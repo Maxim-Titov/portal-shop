@@ -13,7 +13,6 @@
 		<link rel="stylesheet" type="text/css" href="css/slider.css">
 		<link rel="stylesheet" type="text/css" href="css/content.css">
 		<link rel="stylesheet" type="text/css" href="css/feedback.css">
-		<link rel="stylesheet" type="text/css" href="css/sub-menu.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,18 +61,18 @@
 							
 							<form method="get">
 								Ваше ім'я*<br/>
-								<input type="text" name="name" class="name" required><br/>
+								<input type="text" name="name" class="name" placeholder="Це поле має бути заповненим" required><br/>
 							
 								Телефон*<br/>
-								<input type="number" name="phone" class="phone" required><br/>
+								<input type="number" name="phone" class="phone" placeholder="Це поле має бути заповненим" required><br/>
 							
 								Email*<br/>
-								<input type="email" name="email" class="email" required><br/>
+								<input type="email" name="email" class="email" placeholder="Це поле має бути заповненим" required><br/>
 								
 								Повідомлення<br/>
 								<textarea name="message" class="message"></textarea><br/>
 								
-								<button class="enter-btn">ВІДПРАВИТИ</button>
+								<button class="enter-btn" onclick="validate()">ВІДПРАВИТИ</button>
 							</form>
 						</section>
 
