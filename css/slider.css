@@ -148,7 +148,7 @@
         &.left-arrow {
             height: 61px;
             width: 34px;
-            top: 225px;
+            top: 250px;
             left: 5%;
             background: url("../images/left.jpg") no-repeat;
         }
@@ -156,32 +156,7 @@
         &.right-arrow {
             height: 61px;
             width: 34px;
-            top: 225px;
-            right: 5%;
-            background: url("../images/right.jpg") no-repeat;
-        }
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 400px) {
-    .arrows li {
-        position: absolute;
-        list-style: none;
-    
-        &.left-arrow {
-            height: 61px;
-            width: 34px;
-            top: 200px;
-            left: 5%;
-            background: url("../images/left.jpg") no-repeat;
-        }
-        
-        &.right-arrow {
-            height: 61px;
-            width: 34px;
-            top: 200px;
+            top: 250px;
             right: 5%;
             background: url("../images/right.jpg") no-repeat;
         }
