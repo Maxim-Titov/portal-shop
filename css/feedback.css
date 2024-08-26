@@ -10,7 +10,7 @@
     overflow: hidden;
     visibility: hidden;
     transition: opacity 0.5s ease;
-    z-index: 11;
+    z-index: 21;
 }
 
 .back-black {
@@ -150,15 +150,22 @@
         margin-top: 3%;
     }
     
-    .feedback .name, .phone, .email {
+    .feedback input {
         margin-bottom: 3%;
         margin-top: 5px;
     }
+}
 
-    .feedback .name,
-    .phone,
-    .email,
-    .message {
+/*------------------------------------------------------------------*/
+
+@media(max-width: 450px) {
+    .feedback input {
+        margin-bottom: 3%;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .feedback .message {
         width: 100%;
     }
 }
