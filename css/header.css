@@ -1,6 +1,5 @@
 header {
    width: 100%;
-   padding: 3% 10px 3% 10px;
    background-color: #dddddd;
 }
 
@@ -9,6 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 980px;
+  padding: 3% 10px;
 }
 
 .header .company-name {
@@ -23,14 +23,14 @@ header {
 }
 
 .header .logo-image img {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
 }
 
 .company-slogan {
     font-size: 20px;
     margin-left: 25px;
-    margin-top: 15%;
+    margin-top: 18px;
     color: #777777;
 }
 
@@ -48,13 +48,17 @@ header {
 .contact .phone-number a {
    font-weight: 100;
    text-decoration: none;
-   font-size: 35px;
+   font-size: 40px;
 }
 
 .contact a {
     color: #777777;
     text-decoration: underline;
     font-weight: bold;
+}
+
+.hidden-contact p {
+   margin: 0;
 }
 
 .company-logo-and-name-and-slogan {
@@ -98,6 +102,10 @@ header {
    .header .logo-image img {
       width: 75px;
       height: 75px;
+   }
+
+   .contact .phone-number a {
+      font-size: 25px;
    }
 }
 
@@ -145,8 +153,8 @@ header {
 @media(max-width: 500px) {
    .header {
       margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
+      display: block;
+      justify-content: none;
       width: 100%;
    }
 
@@ -168,7 +176,7 @@ header {
    }
 
    .contact {
-      text-align: right;
+      text-align: center;
       display: block;
       font-size: 15px;
    }
@@ -177,39 +185,32 @@ header {
       width: 50px;
       height: 50px;
    }
+
+   .contact .phone-number a {
+      font-size: 20px;
+   }
+
+   .company-logo-and-name-and-slogan {
+      width: 198px;
+      margin: 0 auto 15px auto;
+   }
 }
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 320px) {
-   .header {
-      margin: 0 auto;
-      display: block;
-      justify-content: none;
-      width: 100%;
-   }
-
+@media(max-width: 400px) {
    .header .company-name {
       text-align: center;
       font-size: 20px;
-      line-height: 100%;
       display: block;
       margin-left: 5px;
       width: 5%;
-      color: #434343;
-      font-weight: bold;
    }
 
    .company-slogan {
       font-size: 15px;
       margin-left: 5px;
       margin-top: 5%;
-   }
-
-   .contact {
-      text-align: center;
-      display: block;
-      font-size: 15px;
    }
 
    .header .logo-image img {
