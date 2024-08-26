@@ -58,7 +58,7 @@
 
 .content-block .leftblock .price-logo {
     text-align: center;
-    margin-top: 75%;
+    margin-top: 115px;
     color: #4a4a4a;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .centerblock .div-table .table-row .table-point img {
-    width: 75%;
+    width: 75px;
     margin: 8%;
 }
 
@@ -135,32 +135,33 @@
     text-align: center;
     width: 30%;
     background-color: #dddddd;
+    padding: 13px;
 }
 
 .content-block .centerblock table tr td img {
-    width: 75%;
-    margin: 8%;
+    width: 194px;
 }
 
 .content-block .centerblock table tr td .description{
     font-size: 18px;
-    padding: 5px;
     text-align: left;
 }
 
 .content-block .centerblock table tr td div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .content-block .centerblock table tr td div .price {
     font-weight: bold;
     font-size: 25px;
     color: #575757;
+    margin-bottom: 0;
 }
 
 .content-block .centerblock table tr td div .buy-img {
     width: 25px;
+    margin-top: 10px;
 }
 
 .content-block .centerblock .page-num {
