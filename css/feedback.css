@@ -166,3 +166,8 @@
     outline-color: red;
     box-shadow: inset 0 0 10px 3px red;
 }
+
+.feedback input::placeholder {
+    color: red;
+    padding-left: 15px;
+}
