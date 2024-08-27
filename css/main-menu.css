@@ -3,13 +3,13 @@
     width: 100%;
 }
 
-.menu nav {
+.menu div {
     width: 980px;
     margin: 0 auto;
     padding: 10px;
 }
 
-.menu nav ul {
+.menu div ul {
     display: flex;
     justify-content: center;
     font-size: 30px;

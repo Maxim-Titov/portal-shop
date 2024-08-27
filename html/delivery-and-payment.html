@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ua">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,17 +60,17 @@
 							
 							<h1>Зворотній зв'язок</h1>
 							
-							<form method="get" id="feedback-form" novalidate>
-								Ваше ім'я*<br/>
+							<form id="feedback-form" method="get" novalidate>
+								<span>Ваше ім'я*</span><br/>
 								<input type="text" name="name" class="name" required><br/>
 							
-								Телефон*<br/>
+								<span>Телефон*</span><br/>
 								<input type="number" name="phone" class="phone" required><br/>
 							
-								Email*<br/>
+								<span>Email*</span><br/>
 								<input type="email" name="email" class="email" required><br/>
 								
-								Повідомлення<br/>
+								<span>Повідомлення</span><br/>
 								<textarea name="message" class="message"></textarea><br/>
 								
 								<button class="enter-btn">ВІДПРАВИТИ</button>
@@ -99,15 +99,17 @@
 			</div>
 
 			<div class="menu">
-				<nav>
-					<ul>
-						<li><a href="../index.html">Головна</a> |</li>
-						<li><a href="catalog.html">Каталог</a> |</li>
-						<li><a href="delivery-and-payment.html">Доставка і оплата</a> |</li>
-						<li><a href="price-list.html">Прайс-лист</a> |</li>
-						<li><a href="contacts.html">Контакти</a></li>
-					</ul>
-				</nav>
+				<div>
+					<nav>
+						<ul>
+							<li><a href="index.html">Головна</a> |</li>
+							<li><a href="catalog.html">Каталог</a> |</li>
+							<li><a class="selected" href="delivery-and-payment.html">Доставка і оплата</a> |</li>
+							<li><a href="price-list.html">Прайс-лист</a> |</li>
+							<li><a href="contacts.html">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</section>
 
@@ -134,14 +136,14 @@
 		<section class="content">
 			<div class="breadcrumbs">
 				<nav>
-					<a href="../index.html">Головна</a> / Доставка і оплата
+					<a href="index.html">Головна</a> / Доставка і оплата
 				</nav>
 			</div>
 
 			<div class="content-block">
 				<div class="centerblock">
 					<div class="delivery-and-payment-form">
-                        <form method="get">
+                        <form method="get" id="payment-form" novalidate>
                             <input type="number" name="card-buy" id="card-buy" placeholder="Номер карти" required><br/>
 
                             <div class="cvv-and-pin">
@@ -197,7 +199,7 @@
 				<div class="tags">
 					<nav>
 						<ul>
-							<li><a href="../index.html">Головна</a></li>
+							<li><a href="index.html">Головна</a></li>
 							<li><a href="catalog.html">Каталог</a></li>
 							<li><a href="delivery-and-payment.html">Доставка і оплата</a></li>
 							<li><a href="price-list.html">Прайс-лист</a></li>
@@ -217,5 +219,6 @@
 
 		<script type="text/javascript" src="../js/slider.js"></script>
 		<script type="text/javascript" src="../js/validate.js"></script>
+		<script type="text/javascript" src="../js/payment-validate.js"></script>
 	</body>
 </html>

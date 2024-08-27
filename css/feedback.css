@@ -13,6 +13,15 @@
     z-index: 21;
 }
 
+.feedback h1 {
+    font-size: 35px;
+}
+
+.feedback form span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .back-black {
     position: fixed;
     z-index: 9;
@@ -163,11 +172,13 @@
 /*------------------------------------------------------------------*/
 
 .error {
-    outline-color: red;
-    box-shadow: inset 0 0 10px 3px red;
+    outline-color: #f06767;
+    box-shadow: inset 0 0 10px 1px #f06767;
+    border: none;
 }
 
 .feedback input::placeholder {
-    color: red;
+    color: #f06767;
     padding-left: 15px;
+    font-style: italic;
 }

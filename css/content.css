@@ -258,6 +258,10 @@
         width: 100%;
     }
 
+    .centerblock .div-table .table-row .table-point {
+        width: 85%;
+    }
+
     .content-block .centerblock .div-table .table-row .table-point img {
         width: 200px;
     }
