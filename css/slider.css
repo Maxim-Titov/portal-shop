@@ -22,7 +22,6 @@
     top: 50%;
     transform: translate(0, -50%);
     cursor: pointer;
-    background: #3498db; /* Arrow background color */
     border-radius: 50%;
     padding: 10px;
 }
@@ -51,7 +50,6 @@
         width: 34px;
         top: 650px;
         left: 15%;
-        background: url("../images/left.jpg") no-repeat;
     }
     
     &.right-arrow {
@@ -59,7 +57,6 @@
         width: 34px;
         top: 650px;
         right: 15%;
-        background: url("../images/right.jpg") no-repeat;
     }
 }
 
@@ -75,7 +72,6 @@
             width: 34px;
             top: 500px;
             left: 15%;
-            background: url("../images/left.jpg") no-repeat;
         }
         
         &.right-arrow {
@@ -83,7 +79,6 @@
             width: 34px;
             top: 500px;
             right: 15%;
-            background: url("../images/right.jpg") no-repeat;
         }
     }
 }
@@ -100,7 +95,6 @@
             width: 34px;
             top: 350px;
             left: 5%;
-            background: url("../images/left.jpg") no-repeat;
         }
         
         &.right-arrow {
@@ -108,7 +102,6 @@
             width: 34px;
             top: 350px;
             right: 5%;
-            background: url("../images/right.jpg") no-repeat;
         }
     }
 }
@@ -121,19 +114,17 @@
         list-style: none;
     
         &.left-arrow {
-            height: 61px;
-            width: 34px;
+            height: 55px;
+            width: 52px;
             top: 300px;
             left: 5%;
-            background: url("../images/left.jpg") no-repeat;
         }
         
         &.right-arrow {
-            height: 61px;
-            width: 34px;
+            height: 55px;
+            width: 52px;
             top: 300px;
             right: 5%;
-            background: url("../images/right.jpg") no-repeat;
         }
     }
 }
@@ -146,44 +137,63 @@
         list-style: none;
     
         &.left-arrow {
-            height: 61px;
-            width: 34px;
+            height: 40.5px;
+            width: 27px;
             top: 250px;
             left: 5%;
-            background: url("../images/left.jpg") no-repeat;
         }
         
         &.right-arrow {
-            height: 61px;
-            width: 34px;
+            height: 40.5px;
+            width: 27px;
             top: 250px;
             right: 5%;
-            background: url("../images/right.jpg") no-repeat;
         }
     }
 }
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 329px) {
+@media(max-width: 400px) {
     .arrows li {
         position: absolute;
         list-style: none;
     
         &.left-arrow {
-            height: 61px;
-            width: 34px;
+            height: 35.5px;
+            width: 22px;
             top: 250px;
             left: 5%;
-            background: url("../images/left.jpg") no-repeat;
         }
         
         &.right-arrow {
-            height: 61px;
-            width: 34px;
+            height: 35.5px;
+            width: 22px;
             top: 250px;
             right: 5%;
-            background: url("../images/right.jpg") no-repeat;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 320px) {
+    .arrows li {
+        position: absolute;
+        list-style: none;
+    
+        &.left-arrow {
+            height: 30.5px;
+            width: 17px;
+            top: 250px;
+            left: 5%;
+        }
+        
+        &.right-arrow {
+            height: 30.5px;
+            width: 17px;
+            top: 250px;
+            right: 5%;
         }
     }
 }
