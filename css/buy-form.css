@@ -28,6 +28,10 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
+    .delivery-and-payment-form {
+        padding: 15px;
+    }
+    
     .delivery-and-payment-form input {
         width: 100%;
     }

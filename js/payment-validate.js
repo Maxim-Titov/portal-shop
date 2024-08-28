@@ -9,12 +9,23 @@ $(document).ready(function() {
         let street = $('input[name=street-buy]');
         let house_num = $('input[name=num-buy]');
 
+        let card_num_check = /^(\d{4}[- ]?){3}\d{4}$/;
+        let cvv_check = /^\d{3}$/;
+        let pin_check = /^\d{4}$/;
+
         if ($(card_num).val() === '') {
             event.preventDefault();
 
             $(card_num).addClass('error');
         } else {
-            $(card_num).removeClass('error');
+            if (!card_num_check.test(card_num.val())) {
+                event.preventDefault();
+
+                $(card_num).addClass('error');
+                $(card_num).val('');
+            } else {
+                $(card_num).removeClass('error');
+            }
         }
 
         if ($(cvv).val() === '') {
@@ -22,7 +33,14 @@ $(document).ready(function() {
 
             $(cvv).addClass('error');
         } else {
-            $(cvv).removeClass('error');
+            if (!cvv_check.test(cvv.val())) {
+                event.preventDefault();
+
+                $(cvv).addClass('error');
+                $(cvv).val('');
+            } else {
+                $(cvv).removeClass('error');
+            }
         }
 
         if ($(pin).val() === '') {
@@ -30,7 +48,14 @@ $(document).ready(function() {
 
             $(pin).addClass('error');
         } else {
-            $(pin).removeClass('error');
+            if (!pin_check.test(pin.val())) {
+                event.preventDefault();
+
+                $(pin).addClass('error');
+                $(pin).val('');
+            } else {
+                $(pin).removeClass('error');
+            }
         }
 
         if ($(owner_name).val() === '') {
