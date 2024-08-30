@@ -1,9 +1,6 @@
 .breadcrumbs {
-    width: 100%;
-}
-
-.breadcrumbs nav {
-    padding: 10px;
+    width: 980px;
+    padding-left: 15px;
 }
 
 .breadcrumbs nav ul {
@@ -16,6 +13,10 @@
     margin: 10px 10px 10px 0px;
 }
 
-.breadcrumbs a {
-    text-decoration: none;
+/*------------------------------------------------------------------*/
+
+@media(max-width: 980px) {
+    .breadcrumbs {
+        width: 100%;
+    }
 }
