@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,70 +42,77 @@
 					</div>
 				</div>
 
-				<div class="contact">
-					<p class="phone-number"><a href="tel:+74997777777">+7(499)777-77-77</a></p>
-					<p class="phone-number"><a href="tel:+74997777777">+7(499)777-77-77</a></p>
-					<div class="hidden-contact">
-						<input type="checkbox" id="click-check"/>
-						<label for="click-check" class="clickable">
-							<p>Зворотній зв'язок</p>
-						</label>
-						
-						<section class="feedback">
-							<input type="checkbox" id="close-check"/>
-							<label for="click-check" class="clickable">
-								<img src="../images/icon_close.svg" alt="exit button" class="close-btn">
-							</label>
-							
-							<h1>Зворотній зв'язок</h1>
-							
-							<form id="feedback-form" method="get" novalidate>
-								<span>Ваше ім'я*</span><br/>
-								<input type="text" name="name" class="name" required><br/>
-							
-								<span>Телефон*</span><br/>
-								<input type="number" name="phone" class="phone" required><br/>
-							
-								<span>Email*</span><br/>
-								<input type="email" name="email" class="email" required><br/>
-								
-								<span>Повідомлення</span><br/>
-								<textarea name="message" class="message"></textarea><br/>
-								
-								<button class="enter-btn">ВІДПРАВИТИ</button>
-							</form>
-						</section>
+				<div>
+					<div class="contact">
+						<p class="phone-number"><a href="tel:+74997777777">+7(499)777-77-77</a></p>
+						<p class="phone-number"><a href="tel:+74997777777">+7(499)777-77-77</a></p>
+					</div>
 
-						<div class="back-black"></div>
+					<div class="hamburger-menu-and-feedback-btn">
+						<div class="hamburger-menu">
+							<input id="menu__toggle" type="checkbox" />
+							<label class="menu__btn" for="menu__toggle">
+								<span></span>
+							</label>
+							<ul class="menu__box">
+								<li><a class="menu__item" href="#">Головна</a></li>
+								<li><a class="menu__item" href="../html/catalog.html">Каталог</a></li>
+								<li><a class="menu__item" href="../html/delivery-and-payment.html">Доставка і оплата</a></li>
+								<li><a class="menu__item" href="../html/price-list.html">Прайс-лист</a></li>
+								<li><a class="menu__item" href="../html/contacts.html">Контакти</a></li>
+							</ul>
+						</div>
+
+						<div class="feedback-btn">
+							<div class="hidden-contact">
+								<input type="checkbox" id="click-check"/>
+								<label for="click-check" class="clickable">
+									Зворотній зв'язок
+								</label>
+								
+								<section class="feedback">
+									<input type="checkbox" id="close-check"/>
+									<label for="click-check" class="clickable">
+										<img src="../images/icon_close.svg" alt="exit button" class="close-btn">
+									</label>
+									
+									<h1>Зворотній зв'язок</h1>
+									
+									<form id="feedback-form" method="get" novalidate>
+										<span>Ваше ім'я*</span><br/>
+										<input type="text" name="name" class="name" required><br/>
+									
+										<span>Телефон*</span><br/>
+										<input type="number" name="phone" class="phone" required><br/>
+									
+										<span>Email*</span><br/>
+										<input type="email" name="email" class="email" required><br/>
+										
+										<span>Повідомлення</span><br/>
+										<textarea name="message" class="message"></textarea><br/>
+										
+										<button class="enter-btn">ВІДПРАВИТИ</button>
+									</form>
+								</section>
+
+								<div class="back-black"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<section>
-			<div class="hamburger-menu">
-				<input id="menu__toggle" type="checkbox" />
-				<label class="menu__btn" for="menu__toggle">
-				<span></span>
-				</label>
-				<ul class="menu__box">
-					<li><a class="menu__item" href="index.html">Головна</a></li>
-					<li><a class="menu__item" href="catalog.html">Каталог</a></li>
-					<li><a class="menu__item" href="delivery-and-payment.html">Доставка і оплата</a></li>
-					<li><a class="menu__item" href="price-list.html">Прайс-лист</a></li>
-					<li><a class="menu__item" href="contacts.html">Контакти</a></li>
-				</ul>
-			</div>
-
 			<div class="menu">
 				<div>
 					<nav>
 						<ul>
-							<li><a href="index.html">Головна</a> |</li>
-							<li><a class="selected" href="catalog.html">Каталог</a> |</li>
-							<li><a href="delivery-and-payment.html">Доставка і оплата</a> |</li>
-							<li><a href="price-list.html">Прайс-лист</a> |</li>
-							<li><a href="contacts.html">Контакти</a></li>
+							<li><a class="selected" href="#">Головна</a> |</li>
+							<li><a href="../html/catalog.html">Каталог</a> |</li>
+							<li><a href="../html/delivery-and-payment.html">Доставка і оплата</a> |</li>
+							<li><a href="../html/price-list.html">Прайс-лист</a> |</li>
+							<li><a href="../html/contacts.html">Контакти</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -125,8 +132,8 @@
 
 				<div class="arrows">
 					<ul>
-						<li class="left-arrow"><img src="../images/left.jpg" alt="left arrow"></li>
-						<li class="right-arrow"><img src="../images/right.jpg" alt="right arrow"></li>
+						<li class="left-arrow"><img src="../images/left.jpg" alt="left-arrow"></li>
+						<li class="right-arrow"><img src="../images/right.jpg" alt="right-arrow"></li>
 					</ul>
 				</div>
 			</div>
@@ -135,7 +142,7 @@
 		<section class="content">
 			<div class="breadcrumbs">
 				<nav>
-					<a href="index.html">Головна</a> / Каталог
+					<a href="#">Головна</a>
 				</nav>
 			</div>
 
@@ -158,15 +165,15 @@
 									</div>
 								</li>
 								<li>
-									<a href="categories/appliances.html" class="section">Побутова техніка</a>
+									<a href="#" class="section">Побутова техніка</a>
 
 									<div class="hidden-menu">
 										<nav>
 											<ul>
-												<li><a href="categories/filter-pages/microwaves.html">Мікрохвильовки</a></li>
-												<li><a href="categories/filter-pages/freezers.html">Холодильники</a></li>
-												<li><a href="categories/filter-pages/dishwashers.html">Посудомийні машини</a></li>
-												<li><a href="categories/filter-pages/teapots.html">Чайники</a></li>
+												<li><a href="../html/categories/filter-pages/microwaves.html">Мікрохвильовки</a></li>
+												<li><a href="../html/categories/filter-pages/freezers.html">Холодильники</a></li>
+												<li><a href="../html/categories/filter-pages/dishwashers.html">Посудомийні машини</a></li>
+												<li><a href="../html/categories/filter-pages/teapots.html">Чайники</a></li>
 											</ul>
 										</nav>
 									</div>
@@ -228,10 +235,8 @@
 					</div>
 
 					<div class="price-logo">
-						<a href="price-list.html">
-							<img src="../images/logo_price-list.jpg" alt="logo price list">
-							<p>Прайс-лист</p>
-						</a>
+						<img src="../images/logo_price-list.jpg" alt="logo price list">
+						<p>Прайс-лист</p>
 					</div>
 				</div>
 
@@ -241,78 +246,44 @@
 							<tr>
 								<td>
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</td>
 								<td>
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</td>
 								<td>
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</td>
 								<td>
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
-									</div>
-								</td>
-								<td>
-									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий холодильник, який потрібно купити</p></a>
-									<div>
-										<p class="price">3000 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий холодильник, який потрібно купити</p></a>
-									<div>
-										<p class="price">3000 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
-									</div>
-								</td>
-								<td>
-									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий холодильник, який потрібно купити</p></a>
-									<div>
-										<p class="price">3000 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
-									</div>
-								</td>
-								<td>
-									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий холодильник, який потрібно купити</p></a>
-									<div>
-										<p class="price">3000 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</td>
 							</tr>
@@ -322,28 +293,28 @@
 							<div class="table-row">
 								<div class="table-point">
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</div>
 	
 								<div class="table-point">
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</div>
 	
 								<div class="table-point">
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</div>
 							</div>
@@ -351,28 +322,19 @@
 							<div class="table-row">
 								<div class="table-point">
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</div>
 	
 								<div class="table-point">
 									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
+									<a href="../html/delivery-and-payment.html"><p class="description">Самий кльовий чайник, який потрібно купити</p></a>
 									<div>
 										<p class="price">1900 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
-									</div>
-								</div>
-
-								<div class="table-point">
-									<img src="../images/nophoto.jpg" alt="nop photo">
-									<a href="delivery-and-payment.html"><p class="description">Самий кльовий холодильник, який потрібно купити</p></a>
-									<div>
-										<p class="price">3000 грн.</p>
-										<a href="delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
+										<a href="../html/delivery-and-payment.html"><img src="../images/icon_buy.svg" alt="buy" class="buy-img"></a>
 									</div>
 								</div>
 							</div>
@@ -380,7 +342,7 @@
 					</div>
 
 					<div class="page-num">
-						<a href="#" class="picked">1</a> <a href="catalog-pages/second.html">2</a> <a href="catalog-pages/third.html">3</a> <a href="">4</a> <a href="">5</a> <a href="">6</a> <a href="">7</a>
+						<a href="#" class="picked">1</a> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a href="">5</a> <a href="">6</a> <a href="">7</a>
 					</div>
 
 					<hr/>
@@ -412,21 +374,22 @@
 				<div class="tags">
 					<nav>
 						<ul>
-							<li><a href="index.html">Головна</a></li>
-							<li><a href="catalog.html">Каталог</a></li>
-							<li><a href="delivery-and-payment.html">Доставка і оплата</a></li>
-							<li><a href="price-list.html">Прайс-лист</a></li>
-							<li><a href="contacts.html">Контакти</a></li>
+							<li><a href="#">Головна</a></li>
+							<li><a href="../html/catalog.html">Каталог</a></li>
+							<li><a href="../html/delivery-and-payment.html">Доставка і оплата</a></li>
+							<li><a href="../html/price-list.html">Прайс-лист</a></li>
+							<li><a href="../html/contacts.html">Контакти</a></li>
 						</ul>
 					</nav>
 				</div>
 
 				<div class="creators">
 					<img src="../images/logo_companydev.svg" alt="company dev logo">
-					<p><u><b>Розробка сайту</b></u> - <br/> компанія "Піксель Плюс"</p>
+					<p><u><b>Розробка сайту</b></u> - <br class="br-hide"/> компанія "Піксель Плюс"</p>
 				</div>
 			</div>
 		</footer>
+		
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 

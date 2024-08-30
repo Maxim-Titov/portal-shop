@@ -48,14 +48,14 @@
     &.left-arrow {
         height: 61px;
         width: 34px;
-        top: 650px;
+        top: 650px; /* 650px */
         left: 15%;
     }
     
     &.right-arrow {
         height: 61px;
         width: 34px;
-        top: 650px;
+        top: 650px; /* 650px */
         right: 15%;
     }
 }

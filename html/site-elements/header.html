@@ -1,0 +1,101 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../../css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/feedback.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main-menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="company-logo-and-name-and-slogan">
+                <div class="logo-image">
+                    <a href="#">
+                        <img src="../../images/logo.png" alt="company-logo">
+                    </a>
+                </div>
+
+                <div class="company-name-and-slogan">
+                    <div class="company-name">
+                        Назва компанії
+                    </div>
+
+                    <div class="company-slogan">
+                        Сама крута компанія
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="contact">
+                    <p class="phone-number"><a href="tel:+74997777777">+7(499)777-77-77</a></p>
+                    <p class="phone-number"><a href="tel:+74997777777">+7(499)777-77-77</a></p>
+                </div>
+
+                <div class="hamburger-menu-and-feedback-btn">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#">Головна</a></li>
+                            <li><a class="menu__item" href="../html/catalog.html">Каталог</a></li>
+                            <li><a class="menu__item" href="../html/delivery-and-payment.html">Доставка і оплата</a></li>
+                            <li><a class="menu__item" href="../html/price-list.html">Прайс-лист</a></li>
+                            <li><a class="menu__item" href="../html/contacts.html">Контакти</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="feedback-btn">
+                        <div class="hidden-contact">
+                            <input type="checkbox" id="click-check"/>
+                            <label for="click-check" class="clickable">
+                                Зворотній зв'язок
+                            </label>
+                            
+                            <section class="feedback">
+                                <input type="checkbox" id="close-check"/>
+                                <label for="click-check" class="clickable">
+                                    <img src="../images/icon_close.svg" alt="exit button" class="close-btn">
+                                </label>
+                                
+                                <h1>Зворотній зв'язок</h1>
+                                
+                                <form id="feedback-form" method="get" novalidate>
+                                    <span>Ваше ім'я*</span><br/>
+                                    <input type="text" name="name" class="name" required><br/>
+                                
+                                    <span>Телефон*</span><br/>
+                                    <input type="number" name="phone" class="phone" required><br/>
+                                
+                                    <span>Email*</span><br/>
+                                    <input type="email" name="email" class="email" required><br/>
+                                    
+                                    <span>Повідомлення</span><br/>
+                                    <textarea name="message" class="message"></textarea><br/>
+                                    
+                                    <button class="enter-btn">ВІДПРАВИТИ</button>
+                                </form>
+                            </section>
+
+                            <div class="back-black"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

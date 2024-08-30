@@ -4,11 +4,11 @@ header {
 }
 
 .header {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 980px;
-  padding: 3% 10px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   width: 980px;
+   padding: 3% 10px;
 }
 
 .header .company-name {
@@ -57,13 +57,23 @@ header {
     font-weight: bold;
 }
 
-.hidden-contact p {
+.hidden-contact {
    margin: 0;
+   font-size: 30px;
+   color: #757575;
+   font-weight: bold;
+   padding-left: 150px;
 }
 
 .company-logo-and-name-and-slogan {
     display: flex;
     justify-content: left;
+}
+
+.hamburger-menu-and-feedback-btn {
+   display: flex;
+   justify-content: space-between;
+   padding: 5px;
 }
 
 /*------------------------------------------------------------------*/
@@ -107,6 +117,10 @@ header {
    .contact .phone-number a {
       font-size: 25px;
    }
+
+   .hidden-contact {
+      font-size: 23px;
+   }
 }
 
 /*------------------------------------------------------------------*/
@@ -145,6 +159,18 @@ header {
    .header .logo-image img {
       width: 75px;
       height: 75px;
+   }
+
+   .hidden-contact {
+      font-size: 15px;
+   }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 513px) {
+   .hidden-contact {
+      padding-left: 0px;
    }
 }
 

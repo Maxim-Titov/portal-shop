@@ -46,7 +46,7 @@ $(document).ready(function() {
                 email_field.addClass('error');
 
                 $(email_field).val('');
-                $(email_field).attr('placeholder', "Адреса еектронної пошти введена не правильно");
+                $(email_field).attr('placeholder', "Адреса електронної пошти введена не правильно");
             } else {
                 email_field.removeClass('error');
             }
