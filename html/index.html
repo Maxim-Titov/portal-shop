@@ -367,7 +367,7 @@
 			</div>
 		</section>
 
-		<footer>
+		<!-- <footer>
 			<div class="footer">
 				<div class="about">
 					<p>© 2012-2013 ЗАО "Компанія"</p>
@@ -391,12 +391,22 @@
 					<p><u><b>Розробка сайту</b></u> - <br class="br-hide"/> компанія "Піксель Плюс"</p>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
+
+		<div id="footer"></div>
 		
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 		<script type="text/javascript" src="../js/slider.js"></script>
 		<script type="text/javascript" src="../js/validate.js"></script>
+
+		<script>
+			fetch('site-elements/footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer').innerHTML = data;
+				});
+		</script>
 	</body>
 </html>
