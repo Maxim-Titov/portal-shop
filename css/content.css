@@ -117,6 +117,10 @@
     color: #575757;
 }
 
+.centerblock .div-table .table-row .table-point div a {
+    margin: 0;
+}
+
 .centerblock .div-table .table-row .table-point div .buy-img {
     width: 25px;
 }
@@ -229,6 +233,14 @@
         justify-content: none;
     }
 
+    .content-block .leftblock .navigation nav ul {
+        padding: 0;
+    }
+
+    .content-block .leftblock .navigation nav ul li .hidden-menu {
+        padding-left: 25px;
+    }
+
     .content-block .centerblock table {
         display: none;
     }
@@ -244,7 +256,7 @@
 
     .centerblock .div-table .table-row .table-point {
         margin: 0 auto;
-        width: 50%;
+        width: 85%;
         margin-bottom: 25px;
     }
 
@@ -258,16 +270,12 @@
         width: 100%;
     }
 
-    .centerblock .div-table .table-row .table-point {
-        width: 85%;
-    }
-
     .content-block .centerblock .div-table .table-row .table-point img {
-        width: 200px;
+        width: 370px;
     }
 
-    .content-block .centerblock .div-table .table-row .table-point .description{
-        font-size: 20px;
+    .content-block .centerblock .div-table .table-row .table-point .description {
+        font-size: 22px;
         text-align: left;
         margin: 0;
     }
@@ -289,12 +297,12 @@
     }
 
     .content-block .leftblock .price-logo img {
-        width: 50px;
+        width: 40px;
     }
 
     .content-block .leftblock .price-logo p {
         font-weight: bold;
-        font-size: large;
+        font-size: 15px;
         margin-top: 0;
     }
 
@@ -325,12 +333,48 @@
     .content-block .leftblock .navigation nav ul li {
         margin: 0;
     }
+
+    .centerblock .div-table .table-row .table-point div a {
+        margin-top: 28px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 600px) {
+    .content-block .centerblock .div-table .table-row .table-point img {
+        width: 320px;
+    }
+
+    .content-block .centerblock .div-table .table-row .table-point .description {
+        font-size: 16.5px;
+    }
+
+    .centerblock .div-table .table-row .table-point div a {
+        margin-top: 25px;
+    }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 500px) {
     .content-block .centerblock .div-table .table-row .table-point img {
-        width: 135px;
+        width: 270px;
+    }
+
+    .centerblock .div-table .table-row .table-point div a {
+        margin-top: 23px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 400px) {
+    .content-block .centerblock .div-table .table-row .table-point img {
+        width: 220px;
+    }
+
+    .centerblock .div-table .table-row .table-point div a {
+        margin-top: 20px;
     }
 }
