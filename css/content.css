@@ -39,7 +39,7 @@
 }
 
 .content-block .leftblock .navigation .hidden-menu ul li {
-    list-style: circle;
+    list-style: disc;
     margin: 0;
 }
 
@@ -78,7 +78,6 @@
 
 .centerblock .div-table a {
     text-decoration: none;
-    height: 15px;
     margin-top: 10%;
 }
 
@@ -327,7 +326,7 @@
     }
 
     .content-block .leftblock .navigation .section {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .content-block .leftblock .navigation nav ul li {
