@@ -1,4 +1,4 @@
-fetch('../../../../../html/site-elements/header.html')
+fetch('/portal-shop/html/site-elements/header.html')
     .then(response => response.text())
     .then(data => {
         const header = document.getElementById('header-block').innerHTML = data;
@@ -23,7 +23,7 @@ fetch('../../../../../html/site-elements/header.html')
     })
     .catch(error => console.log('Помилка завантаження:', error));
 
-fetch('../../../../../html/site-elements/slider.html')
+fetch('/portal-shop/html/site-elements/slider.html')
     .then(response => response.text())
     .then(data => {
         const slider = document.getElementById('slider-block').innerHTML = data;
@@ -48,14 +48,14 @@ fetch('../../../../../html/site-elements/slider.html')
     })
     .catch(error => console.log('Помилка завантаження:', error));
 
-fetch('../../../../../html/site-elements/desc-content.html')
+fetch('/portal-shop/html/site-elements/desc-content.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('desc-content-block').innerHTML = data;
     })
     .catch(error => console.log('Помилка завантаження:', error));
 
-fetch('../../../../../html/site-elements/footer.html')
+fetch('/portal-shop/html/site-elements/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer-block').innerHTML = data;
