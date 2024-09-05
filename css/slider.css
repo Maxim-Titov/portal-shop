@@ -34,12 +34,6 @@
     right: -50px;
 }
 
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 20px;
-    color: black;
-}
-
 .arrows li {
     position: absolute;
     list-style: none;
@@ -58,6 +52,10 @@
         top: 650px;
         right: 15%;
     }
+}
+
+.left-arrow, .right-arrow:hover {
+    cursor: pointer;
 }
 
 /*------------------------------------------------------------------*/
