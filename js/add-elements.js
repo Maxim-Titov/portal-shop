@@ -48,6 +48,13 @@ fetch('/portal-shop/html/site-elements/slider.html')
     })
     .catch(error => console.log('Помилка завантаження:', error));
 
+fetch('/portal-shop/html/site-elements/price-list.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('price-list-block').innerHTML = data;
+    })
+    .catch(error => console.log('Помилка завантаження:', error));
+
 fetch('/portal-shop/html/site-elements/desc-content.html')
     .then(response => response.text())
     .then(data => {
